@@ -27,11 +27,11 @@ class Ship():
 
     def update(self):
         """根据移动标志调整飞船位置"""
-        if self.moving_right:
+        if self.moving_right and self.rect.right < self.screen_rect.right:  # 图标矩形的右边不超出右边界限
             self.center += self.ai_settings.ship_speed_factor
-        if self.moving_left:
+        if self.moving_left and self.rect.left > 0:
             self.center -= self.ai_settings.ship_speed_factor
-        self.rect.centerx = self.center
+        self.rect.centerx = self.center  # 图标矩形的中心x的位置
 
     def blitme(self):
         """在指定位置绘制飞船"""
