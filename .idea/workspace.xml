@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/ship.py" description="        self.screen.blit(self.image,self.rect)" line="37" />
+    <bookmark url="file://$PROJECT_DIR$/ship.py" description="        self.screen.blit(self.image,self.rect)" line="45" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63c969ce-a949-4bf8-a326-7aa14200f68e" name="Default Changelist" comment="">
+    <list default="true" id="63c969ce-a949-4bf8-a326-7aa14200f68e" name="Default Changelist" comment="重构check_events">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/ship.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/alien_invasion$game_functions.coverage" NAME="game_functions Coverage Results" MODIFIED="1600177907383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/alien_invasion$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1600522556206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/alien_invasion$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1600787713860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/alien_invasion$ship.coverage" NAME="ship Coverage Results" MODIFIED="1600522358322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -40,34 +41,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1810" />
-          <entry key="txt" value="7" />
+          <entry key="py" value="2266" />
+          <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="1810" />
+          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="Python" value="2266" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+            <state relative-caret-position="510">
+              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
-                <marker date="1600523156324" expanded="true" signature="104:109" ph="..." />
-                <marker date="1600523156324" expanded="true" signature="1047:1052" ph="..." />
+                <marker date="1600787713766" expanded="true" signature="104:109" ph="..." />
+                <marker date="1600787713766" expanded="true" signature="1453:1458" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alien_invasion.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="302">
@@ -83,12 +84,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="187">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
               <folding>
                 <element signature="e#75#85#0" expanded="true" />
-                <marker date="1600520977874" expanded="true" signature="125:130" ph="..." />
-                <marker date="1600520977874" expanded="true" signature="698:703" ph="..." />
+                <marker date="1600786974715" expanded="true" signature="481:760" ph="..." />
+                <marker date="1600786974715" expanded="true" signature="783:788" ph="..." />
+                <marker date="1600786974715" expanded="true" signature="1103:1108" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,9 +123,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/game_functions.py" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/alien_invasion.py" />
+        <option value="$PROJECT_DIR$/game_functions.py" />
         <option value="$PROJECT_DIR$/ship.py" />
       </list>
     </option>
@@ -280,7 +282,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600522760177</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="限制飞船的活动范围">
+      <created>1600523211607</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600523211607</updated>
+    </task>
+    <task id="LOCAL-00003" summary="重构check_events">
+      <created>1600692418067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600692418067</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -318,32 +334,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="调整飞船的速度" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整飞船的速度" />
+    <MESSAGE value="限制飞船的活动范围" />
+    <MESSAGE value="重构check_events" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构check_events" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/alien_invasion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="e#75#85#0" expanded="true" />
-            <marker date="1600522094334" expanded="true" signature="198:202" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#75#85#0" expanded="true" />
-            <marker date="1600520977874" expanded="true" signature="125:130" ph="..." />
-            <marker date="1600520977874" expanded="true" signature="698:703" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -354,13 +349,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <element signature="e#75#85#0" expanded="true" />
+            <marker date="1600786974715" expanded="true" signature="481:760" ph="..." />
+            <marker date="1600786974715" expanded="true" signature="783:788" ph="..." />
+            <marker date="1600786974715" expanded="true" signature="1103:1108" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ship.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+        <state relative-caret-position="510">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
           <folding>
-            <marker date="1600523156324" expanded="true" signature="104:109" ph="..." />
-            <marker date="1600523156324" expanded="true" signature="1047:1052" ph="..." />
+            <marker date="1600787713766" expanded="true" signature="104:109" ph="..." />
+            <marker date="1600787713766" expanded="true" signature="1453:1458" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alien_invasion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#75#85#0" expanded="true" />
+            <marker date="1600522094334" expanded="true" signature="198:202" ph="..." />
           </folding>
         </state>
       </provider>
