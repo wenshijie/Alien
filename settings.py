@@ -6,7 +6,7 @@ Created on =2020-09-14
 """
 
 
-class Settings():
+class Settings:
     """储存《外星人入侵》的所有设置的类"""
 
     def __init__(self):
