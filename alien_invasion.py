@@ -8,6 +8,7 @@ import sys
 import pygame
 from settings import Settings
 from ship import Ship
+from alien import Alien
 import game_functions as gf
 from pygame.sprite import Group
 
@@ -23,6 +24,8 @@ def run_game():
     ship = Ship(ai_settings, screen)
     # 创建一个用于储存子弹的编组
     bullets = Group()
+    # 创建一个外星人
+    alien = Alien(ai_settings,screen)
 
     # 开始游戏的主循环
     while True:
@@ -32,7 +35,7 @@ def run_game():
         ship.update()
         gf.update_bullets(bullets)
         # 每次循环都重绘屏幕并绘制
-        gf.update_screen(ai_settings, screen, ship, bullets)
+        gf.update_screen(ai_settings, screen, ship, alien, bullets)
 
 
 run_game()
