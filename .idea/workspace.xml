@@ -5,10 +5,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63c969ce-a949-4bf8-a326-7aa14200f68e" name="Default Changelist" comment="向下移动外星人并改变移动方向">
+    <list default="true" id="63c969ce-a949-4bf8-a326-7aa14200f68e" name="Default Changelist" comment="检测子弹与外星人的碰撞">
+      <change afterPath="$PROJECT_DIR$/彩蛋" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599360629240</updated>
       <workItem from="1616494456760" duration="666000" />
-      <workItem from="1616495150565" duration="2740000" />
+      <workItem from="1616495150565" duration="4823000" />
     </task>
     <task id="LOCAL-00001" summary="调整飞船的速度">
       <created>1600522760177</created>
@@ -240,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616496847214</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="检测子弹与外星人的碰撞">
+      <created>1616497942680</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616497942680</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,35 +281,40 @@
     <MESSAGE value="多行外星人" />
     <MESSAGE value="外星人群移动" />
     <MESSAGE value="向下移动外星人并改变移动方向" />
-    <option name="LAST_COMMIT_MESSAGE" value="向下移动外星人并改变移动方向" />
+    <MESSAGE value="检测子弹与外星人的碰撞" />
+    <option name="LAST_COMMIT_MESSAGE" value="检测子弹与外星人的碰撞" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1209" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616498635584">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1209" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616498635584" />
     <state x="500" y="214" key="FileChooserDialogImpl" timestamp="1616494911570">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="500" y="214" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1616494911570" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1616497881226">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1616500130380">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616497881226" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1616497881226">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616500130380" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1616500130380">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616497881226" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1616497881226">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616500130380" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1616500130380">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616497881226" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1616497881226">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616500130380" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1616500130380">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616497881226" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616500130380" />
     <state x="222" y="105" key="SettingsEditor" timestamp="1616495000713">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="222" y="105" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1616495000713" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Alien$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1616497881210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Alien$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1616500130380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
