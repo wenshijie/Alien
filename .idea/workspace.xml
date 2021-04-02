@@ -5,10 +5,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63c969ce-a949-4bf8-a326-7aa14200f68e" name="Default Changelist" comment="14.3.1 显示得分">
+    <list default="true" id="63c969ce-a949-4bf8-a326-7aa14200f68e" name="Default Changelist" comment="14.3.2 创建记分牌">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +144,7 @@
       <workItem from="1616494456760" duration="666000" />
       <workItem from="1616495150565" duration="10571000" />
       <workItem from="1617009812885" duration="9043000" />
-      <workItem from="1617359530843" duration="2688000" />
+      <workItem from="1617359530843" duration="4866000" />
     </task>
     <task id="LOCAL-00001" summary="调整飞船的速度">
       <created>1600522760177</created>
@@ -305,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617022497856</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="14.3.2 创建记分牌">
+      <created>1617362335205</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1617362335205</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +375,8 @@
     <MESSAGE value="14.1.6 隐藏光标" />
     <MESSAGE value="14.2.2 重置速度" />
     <MESSAGE value="14.3.1 显示得分" />
-    <option name="LAST_COMMIT_MESSAGE" value="14.3.1 显示得分" />
+    <MESSAGE value="14.3.2 创建记分牌" />
+    <option name="LAST_COMMIT_MESSAGE" value="14.3.2 创建记分牌" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1209" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616498635584">
@@ -377,28 +387,28 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="500" y="214" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1616494911570" />
-    <state width="1397" height="242" key="GridCell.Tab.0.bottom" timestamp="1617359490340">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1617364207030">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616662466711" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1617364207030" />
     <state width="1397" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1617359490340" />
     <state width="1397" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1617020294331" />
-    <state width="1397" height="242" key="GridCell.Tab.0.center" timestamp="1617359490340">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1617364207030">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616662466711" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1617364207030" />
     <state width="1397" height="242" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1617359490340" />
     <state width="1397" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1617020294331" />
-    <state width="1397" height="242" key="GridCell.Tab.0.left" timestamp="1617359490340">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1617364207030">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616662466711" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1617364207030" />
     <state width="1397" height="242" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1617359490340" />
     <state width="1397" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1617020294331" />
-    <state width="1397" height="242" key="GridCell.Tab.0.right" timestamp="1617359490340">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1617364207030">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616662466711" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1617364207030" />
     <state width="1397" height="242" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1617359490340" />
     <state width="1397" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1617020294331" />
     <state x="222" y="105" key="SettingsEditor" timestamp="1616495000713">
@@ -411,6 +421,6 @@
     <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1440.920/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1616582530301" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Alien$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1617362284637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Alien$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1617364206999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
