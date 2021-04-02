@@ -90,10 +90,11 @@ def check_bullet_alien_collisions(ai_settings, screen, stats, sb, ship, aliens, 
     # 删除发生碰撞的子弹和外星人
     collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
     if collisions:
+        # 命名为aliens 没问题吗？
         for aliens in collisions.values():
             stats.score += ai_settings.alien_points*len(aliens)
             sb.prep_score()
-
+        check_high_score(stats,sb)
     if len(aliens) == 0:
         # 删除现有的子弹,加快游戏节奏，并新建一群外星人
         bullets.empty()
@@ -126,6 +127,8 @@ def update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_bu
         play_button.draw_button()
     # 让最近绘制的屏幕可见
     pygame.display.flip()
+
+
 
 
 def get_number_aliens_x(ai_settings, alien_width):
@@ -221,3 +224,11 @@ def update_aliens(ai_settings, stats, screen, ship, aliens, bullets):
         ship_hit(ai_settings, stats, screen, ship, aliens, bullets)
     # 检查是否有外星人到达屏幕底端
     check_aliens_bottom(ai_settings, stats, screen, ship, aliens, bullets)
+
+
+def check_high_score(stats,sb):
+    """检查是否诞生了新的最高分"""
+    if stats.score > stats.high_score:
+        stats.high_score = stats.score
+        sb.prep_score()
+
